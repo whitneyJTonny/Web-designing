@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design & Development Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        body {
+            background-image: url(./tree.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav .M{
+            background-color: orange;
+        }
+
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Slight background transparency */
+            color: white;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0 50px;
+        }
+
+        .hero-text {
+            color: white;
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .hero-text .cta-btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Login form */
+        .login-form {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            width: 300px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-form .login-btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form .signup-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .login-form .signup-link a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">PraRoz</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div>
+            <input type="text" placeholder="Type to Search">
+            <button class="M">Search</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Web Design &<br> Development Course</h1>
+            <p>Web Design is a specialization in the design stream. They also use HTML, CSS, WYSIWYG editing software, mark-up validators, etc., to create design elements.</p>
+            <button class="cta-btn">JOIN US</button>
+            <h1 style="background-color: orange;"</h1>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Login Here</h2>
+            <input type="email" placeholder="Enter Email Here">
+            <input type="password" placeholder="Enter Password Here">
+            <button class="login-btn">Login</button>
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign up here</a>
+            </div>
+            <div class="social-icons">
+                <a href="#">F</a>
+                <a href="#">I</a>
+                <a href="#">T</a>
+                <a href="#">G</a>
+                <a href="#">S</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
